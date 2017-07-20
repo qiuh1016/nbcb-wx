@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+  
+  <view class="page-section">
+    <view class="weui-cells__title">直投收益率(%):</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="digit" value="{{value_1}}" bindinput="inputValue_1"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">存款利率(%):</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="digit" value="{{value_2}}" bindinput="inputValue_2"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">直投占比:</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="digit" value="{{value_3}}" bindinput="inputValue_3"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+      <button bindtap="getshouyi" type="primary">计算收益率</button>
+  </view>
+  
+  
+</view>

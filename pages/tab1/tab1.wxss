@@ -1,0 +1,50 @@
+/**index.wxss**/
+@import "../common/lib/weui.wxss";
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.title {
+  margin-top: 50px;
+  width: 30%;
+}
+
+.input {
+  width: 60%;
+  height: 80rpx;
+  margin: 20rpx;
+  background-color: #eff;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  text-align: right;
+} */
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+
+.container {
+    padding: 100rpx 0;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
