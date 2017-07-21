@@ -1,5 +1,9 @@
 <template name="foot">
-  <navigator class="page-foot" openType="switchTab" url="/page/component/index" hover-class="none">
-    <image class="icon-foot" src="../../../../image/icon_foot.png"></image>
-  </navigator>
+  <!-- <navigator class="page-foot" openType="switchTab" url="/pages/logs/logs" hover-class="none">
+    <image class="icon-foot" src="../../../../image/mine/icon_foot.png"></image>
+  </navigator> -->
+  <view class="page-foot">
+    <image class="icon-foot" src="../../image/mine/icon_foot.png"></image>
+  </view>
+  
 </template>

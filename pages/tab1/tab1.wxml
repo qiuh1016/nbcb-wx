@@ -1,5 +1,10 @@
 <!--index.wxml-->
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
 <view class="container">
+
+  <template is="head" data="{{title: '直投比计算'}}"/>
+  
   <!-- <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -39,6 +44,6 @@
   <view class="page-section">
       <button bindtap="getshouyi" type="primary">计算收益率</button>
   </view>
-  
-  
+
+  <template is="foot" />
 </view>

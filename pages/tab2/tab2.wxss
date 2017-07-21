@@ -3,12 +3,6 @@
 .page-section{
   margin-bottom: 20rpx;
 }
-
-.container {
-    padding: 100rpx 0;
-}
-
 button{
-  margin-top: 30rpx;
-  margin-bottom: 30rpx;
+  margin: 30rpx;
 }

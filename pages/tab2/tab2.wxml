@@ -1,4 +1,8 @@
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
 <view class="container">
+
+  <template is="head" data="{{title: '理财收益计算'}}"/>
 
   <view class="page-section">
     <view class="weui-cells__title">年化收益(%):</view>
@@ -31,5 +35,5 @@
       <button bindtap="getshouyi" type="primary">计算收益</button>
   </view>
   
-  
+  <template is="foot" />
 </view>

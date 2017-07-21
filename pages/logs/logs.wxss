@@ -1,8 +1,13 @@
-.log-list {
+@import "../common/lib/weui.wxss";
+/* .log-list {
   display: flex;
   flex-direction: column;
   padding: 40rpx;
 }
 .log-item {
   margin: 10rpx;
+} */
+
+.page-section-title {
+  margin-top: 30rpx; 
 }
