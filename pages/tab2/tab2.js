@@ -2,11 +2,9 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    value_1: 5.0,
-    value_2: 120,
-    value_3: 1,
+    // value_1: 5.0,
+    // value_2: 120,
+    // value_3: 1,
   },
   //事件处理函数
   bindViewTap: function () {
@@ -18,15 +16,27 @@ Page({
     this.setData({
       value_1: e.detail.value
     })
+    wx.setStorage({
+      key: "tab2_value_1",
+      data: e.detail.value,
+    })
   },
   inputValue_2: function (e) {
     this.setData({
       value_2: e.detail.value
     })
+    wx.setStorage({
+      key: "tab2_value_2",
+      data: e.detail.value,
+    })
   },
   inputValue_3: function (e) {
     this.setData({
       value_3: e.detail.value
+    })
+    wx.setStorage({
+      key: "tab2_value_3",
+      data: e.detail.value,
     })
   },
   getshouyi: function () {
@@ -43,12 +53,10 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function (userInfo) {
-      //更新数据
-      that.setData({
-        userInfo: userInfo
-      })
+    that.setData({
+      value_1: wx.getStorageSync('tab2_value_1') === '' ? 5.2 : wx.getStorageSync('tab2_value_1'),
+      value_2: wx.getStorageSync('tab2_value_2') === '' ? 120 : wx.getStorageSync('tab2_value_2'),
+      value_3: wx.getStorageSync('tab2_value_3') === '' ? 1 : wx.getStorageSync('tab2_value_3'),
     })
   }
 })

@@ -40,7 +40,9 @@
   margin-bottom: 20rpx;
 }
 
-
 button{
   margin: 30rpx;
+}
+.hide{
+    display:none
 }
