@@ -13,7 +13,50 @@
     <text class="user-motto">{{motto}}</text>
   </view> -->
 
+  <view class="page-section">
+    <view class="weui-cells__title"></view> 
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">直投收益率(%):</text>
+        <input class="weui-input" type="digit" value="{{value_1}}" bindinput="inputValue_1"/>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">存款利率(%):</text>
+        <input class="weui-input" type="digit" value="{{value_2}}" bindinput="inputValue_2"/>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">计算方式:</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio weui-input">
+            <radio value="0" checked="{{bilvChecked}}"/>比率
+          </label>
+          <label class="radio weui-input">
+            <radio value="1" checked="{{!bilvChecked}}"/>金额
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="{{bilvChecked ? 'weui-cell weui-cell_input': 'weui-cell weui-cell_input hide'}}">
+        <text class="weui-cell-title">直投占比:</text>
+        <input class="weui-input" type="digit" value="{{value_3}}" bindinput="inputValue_3"/>
+      </view>
+
+      <view class="{{!bilvChecked ? 'weui-cell weui-cell_input': 'weui-cell weui-cell_input hide'}}">
+        <text class="weui-cell-title">直投金额(万元):</text>
+        <input class="weui-input" type="digit" value="{{value_4}}" bindinput="inputValue_4"/>
+      </view>
+      
+      <view class="{{!bilvChecked ? 'weui-cell weui-cell_input': 'weui-cell weui-cell_input hide'}}">
+        <label class="weui-cell-title">存款金额(万元):</label>
+        <input class="weui-input" type="digit" value="{{value_5}}" bindinput="inputValue_5"/>
+      </view>
+    </view>
+  </view>
   
+<!--   
   <view class="page-section">
     <view class="weui-cells__title">直投收益率(%):</view>
     <view class="weui-cells weui-cells_after-title">
@@ -32,24 +75,11 @@
     </view>
   </view>
 
-  <!-- <view class="page-section page-section-gap">
-    <view class="page-section-title">默认样式</view>
-    <label class="radio">
-      <radio value="r1" />选中
-    </label>
-    <label class="radio">
-      <radio value="r2" />未选中
-    </label>
-  </view> -->
-
   <view class="page-section">
     <view class="weui-cells__title">计算方式:</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
         <radio-group class="radio-group" bindchange="radioChange">
-          <!-- <label class="radio" wx:for="{{items}}" wx:key="checked">
-            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
-          </label> -->
           <label class="radio" >
             <radio value="0" checked="{{bilvChecked}}"/>比率
           </label>
@@ -83,7 +113,7 @@
         <input class="weui-input" type="digit" value="{{value_5}}" bindinput="inputValue_5"/>
       </view>
     </view>
-  </view>
+  </view> -->
 
   <view class="page-section">
       <button bindtap="getshouyi" type="primary">计算收益率</button>

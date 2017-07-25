@@ -44,10 +44,22 @@ Page({
     var qixian = this.data.value_2
     var money = this.data.value_3
     var shouyi = shouyilv * qixian / 365 * money * 100
-    wx.showToast({
-      title: shouyi.toFixed(2) + "元",
-      icon: 'success',
-      duration: 2000
+    // wx.showToast({
+    //   title: shouyi.toFixed(2) + "元",
+    //   icon: 'success',
+    //   duration: 2000
+    // })
+    wx.showModal({
+      title: '收益',
+      content: shouyi.toFixed(2) + "元",
+      showCancel: false,
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   },
   onLoad: function () {

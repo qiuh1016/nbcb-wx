@@ -5,14 +5,26 @@
   <template is="head" data="{{title: '理财收益计算'}}"/>
 
   <view class="page-section">
-    <view class="weui-cells__title">年化收益(%):</view>
+    <view class="weui-cells__title"></view>
+
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">年化收益(%):</text>
         <input class="weui-input" type="digit" value="{{value_1}}" bindinput="inputValue_1"/>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">理财期限(天):</text>
+        <input class="weui-input" type="digit" value="{{value_2}}" bindinput="inputValue_2"/>
+      </view>
+      
+      <view class="weui-cell weui-cell_input">
+        <text class="weui-cell-title">投资金额(万元):</text>
+        <input class="weui-input" type="digit" value="{{value_3}}" bindinput="inputValue_3"/>
       </view>
     </view>
   </view>
-
+<!-- 
   <view class="page-section">
     <view class="weui-cells__title">理财期限(天):</view>
     <view class="weui-cells weui-cells_after-title">
@@ -29,7 +41,7 @@
         <input class="weui-input" type="digit" value="{{value_3}}" bindinput="inputValue_3"/>
       </view>
     </view>
-  </view>
+  </view> -->
 
   <view class="page-section">
       <button bindtap="getshouyi" type="primary">计算收益</button>

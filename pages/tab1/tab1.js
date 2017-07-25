@@ -17,7 +17,6 @@ Page({
     })
   },
   radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
     if (e.detail.value == "0") {
       this.setData(
         {
@@ -28,7 +27,6 @@ Page({
         key: "bilvChecked",
         data: true
       })
-      console.log(this.data.bilvChecked)
     } else {
       this.setData(
         {
@@ -39,7 +37,6 @@ Page({
         key: "bilvChecked",
         data: false
       })
-      console.log(this.data.bilvChecked)
     }
   },
   inputValue_1: function(e) {
@@ -102,10 +99,23 @@ Page({
       shouyilv = (lixi_1 * money_1 + lixi_2 * money_2) / (money_1 + money_2) / 100
     }
     
-    wx.showToast({
-      title: "收益率：" + shouyilv.toPrecision(3) + "%",
-      icon: 'success',
-      duration: 2000
+    // wx.showToast({
+    //   title: "收益率：" + shouyilv.toPrecision(3) + "%",
+    //   icon: 'success',
+    //   duration: 2000
+    // })
+
+    wx.showModal({
+      title: '收益率',
+      content: shouyilv.toPrecision(3) + "%",
+      showCancel: false,
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   },
   onLoad: function () {
