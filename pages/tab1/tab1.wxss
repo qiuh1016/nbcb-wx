@@ -67,3 +67,7 @@ input {
 radio-group{
   width: calc(100% - 120px);
 }
+
+.navigator-hover {
+    color:blue;
+}

@@ -9,24 +9,18 @@
   </block>  -->
 
   <view class="page-section">
-
     <view class="page-section-title">推荐展示样式</view>
-
-    
-    <view class="weui-cells weui-cells_after-title">
-
-      <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
-        <view class="weui-cell weui-cell_switch">
-          <view class="weui-cell__bd">{{index + 1}}.</view>
+    <view class="weui-cells weui-cells_after-title">    
+        <view class="weui-cell" wx:for="{{events}}" wx:for-item="event" wx:key="*this">
+          <checkbox-group bindchange="checkboxChange">
+            <checkbox value="{{event.id}}" checked="{{event.finished}}"/>
+          </checkbox-group>
+          <view class="weui-cell__bd">{{event.title}}</view>
           <view class="weui-cell__ft">
-            <!-- <switch checked /> -->
-            <text>{{log}}</text>
+            <text>{{event.date}}</text>
           </view>
         </view>
-
-      </block> 
     </view>
-    
 
   </view>
 

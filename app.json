@@ -2,7 +2,8 @@
   "pages":[
     "pages/tab1/tab1",
     "pages/logs/logs",
-    "pages/tab2/tab2"
+    "pages/tab2/tab2",
+    "pages/map/map"        
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -33,6 +34,12 @@
         "iconPath": "image/icon_API.png",
         "selectedIconPath": "image/icon_API_HL.png",
         "text": "LOG"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "Map"
       }
     ]
   }
