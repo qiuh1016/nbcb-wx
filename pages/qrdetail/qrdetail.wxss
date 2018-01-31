@@ -1,0 +1,56 @@
+/* pages/qrdetail/qrdetail.wxss */
+@import "../common/lib/weui.wxss";
+.view-section-head {
+  margin-top: 100rpx; 
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center
+}
+
+.view-section {
+  margin: 20rpx;
+  text-align: center 
+}
+
+.icon-portrait {
+  width: 240rpx;
+  height: 330rpx;
+}
+
+.weui-cell-title{
+  /* height: 2.58823529em; */
+  width: 120px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.weui-cell {
+  height: 1em;
+}
+
+weui-cells {
+  margin-top: 2em;
+}
+
+.radio.weui-input{
+  display: inline-block;
+  width: 50%;
+}
+radio-group{
+  width: calc(100% - 120px);
+}
+
+.navigator-hover {
+    color:blue;
+}
+
+view.title {
+  text-align: center;
+}
+
+text.title {
+  font-size: 24px;
+  /* margin: 20rpx; */
+  
+}

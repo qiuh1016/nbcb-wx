@@ -1,0 +1,53 @@
+/* pages/qrcode/qrcode.wxss */
+
+
+.view-section-head {
+  margin-top: 100rpx; 
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center
+}
+
+.view-section {
+  margin: 20rpx;
+  /* text-align: center */
+}
+
+.icon-logo {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.btn {
+  margin-right:20rpx; 
+  margin-left:20rpx; 
+  background-color: #FFFFFF;
+}
+
+view.title {
+  text-align: center;
+}
+
+view.description {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+text.title {
+  font-size: 24px;
+  /* margin: 20rpx; */
+  
+}
+
+text.description {
+  font-size: 16px;
+  color: #BCBCBC;
+  font-weight: 300;
+  /* text-align:left; */
+}
+
+view.err-tip{
+  text-align: center
+}

@@ -1,0 +1,103 @@
+<!--pages/qrdetail/qrdetail.wxml-->
+
+<view class='view-section-head'>
+  <view class='title'>
+    <text class='title'>学信网报告在线验证</text>    
+  </view>
+</view>
+
+<view class='view-section'>
+  <image class="icon-portrait" src="../../image/portrait/{{name}}.png"></image>  
+</view>
+
+<view class="page-section">
+    <view class="weui-cells__title"></view> 
+
+    <view class="weui-cells weui-cells_after-title">
+      <!-- <view class="weui-cell">
+        <text class="weui-cell-title">ID:</text>
+        <text class="weui-cell-title">{{id}}</text>
+      </view> -->
+      <view class="weui-cell">
+        <text class="weui-cell-title">姓名:</text>
+        <text class="weui-cell-title">{{name}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">性别:</text>
+        <text class="weui-cell-title">{{sex}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">证件号码:</text>
+        <text class="weui-cell-title">{{idcard}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">民族:</text>
+        <text class="weui-cell-title">{{nation}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">出生日期:</text>
+        <text class="weui-cell-title">{{birthday}}</text>
+      </view>
+    </view>
+
+    <view class="weui-cells__title"></view> 
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <text class="weui-cell-title">院校:</text>
+        <text class="weui-cell-title">{{school}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">层次:</text>
+        <text class="weui-cell-title">{{education}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">院系:</text>
+        <text class="weui-cell-title">{{school_xi ? school_xi : '*'}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">班级:</text>
+        <text class="weui-cell-title">{{school_class ? school_class : '*'}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">专业:</text>
+        <text class="weui-cell-title">{{school_major}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">学号:</text>
+        <text class="weui-cell-title">{{school_number}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">形式:</text>
+        <text class="weui-cell-title">{{school_form}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">入学时间:</text>
+        <text class="weui-cell-title">{{school_time}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">学制:</text>
+        <text class="weui-cell-title">{{school_year}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">类型:</text>
+        <text class="weui-cell-title">{{school_type}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">学籍状态:</text>
+        <text class="" style='font-size:13px;'>{{school_status}}</text>
+      </view>
+    </view>
+
+    <view class="weui-cells__title"> </view> 
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <text class="weui-cell-title">在线验证码:</text>
+        <text class="weui-cell-title" style='font-weight:500'>{{code}}</text>
+      </view>
+      <view class="weui-cell">
+        <text class="weui-cell-title">更新时间:</text>
+        <text class="weui-cell-title">{{update_time}}</text>
+      </view>
+    </view>
+    <view class="weui-cells__title"> </view> 
+  </view>

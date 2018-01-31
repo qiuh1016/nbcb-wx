@@ -1,0 +1,30 @@
+<!--pages/qrcode/qrcode.wxml-->
+
+<view class='container'>
+
+  <view class='view-section-head'>
+    <image class="icon-logo" src="../../image/mine/logo_1.png"></image>  
+  </view>
+
+
+  <view class='view-section'>
+    <view class='title'>
+      <text class='title'>学信网报告在线验证</text>    
+    </view>
+    <view class='description'>
+      <text class='description'>扫描验证高等教育学籍学历在线验证报告以及学历、成绩认证报告真伪，请勿使用其他第三方程序扫描，以免上当受骗。</text>
+    </view>
+  </view>
+
+  <view class="view-section">
+    <button class='btn' bindtap="saoma" type="primary" style='background-color:#32A1AC'>扫码验证</button>
+  </view>
+
+  <view class="view-section">
+    <view class='err-tip'>
+      <text style='color:#EE2525'>{{tip}}</text>
+    </view>
+  </view>
+  
+
+</view>

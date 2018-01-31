@@ -1,15 +1,18 @@
 {
-  "pages":[
+  "pages": [
+    
+    "pages/qrcode/qrcode",
     "pages/tab1/tab1",
     "pages/logs/logs",
     "pages/tab2/tab2",
-    "pages/map/map"        
+    "pages/map/map",
+    "pages/qrdetail/qrdetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#7A7E83",
@@ -17,6 +20,12 @@
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
+      {
+        "pagePath": "pages/qrcode/qrcode",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "QRCODE"
+      },
       {
         "pagePath": "pages/tab1/tab1",
         "iconPath": "image/icon_component.png",
